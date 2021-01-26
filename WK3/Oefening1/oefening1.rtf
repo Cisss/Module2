@@ -1,0 +1,120 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Roboto-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red13\green99\blue98;\red13\green99\blue98;
+\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\csgray\c0;\cssrgb\c0\c45882\c45882;\cssrgb\c0\c45882\c45882;
+\cssrgb\c100000\c100000\c100000;\cssrgb\c0\c0\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww21100\viewh9800\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \CocoaLigature0 Songs: _id|track|title|album\
+Albums: _id|name|artist\
+artist: _id|name\
+\
+wk 2 opdracht 3 if name in [br, img]\
+\
+\pard\tx566\pardeftab720\sa160\partightenfactor0
+
+\f1\b\fs32 \cf4 \cb5 \CocoaLigature1 1.
+\b0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 Toon alle songs van het album \'91Forbidden\'92.\
+\pard\tx566\pardeftab720\sa160\partightenfactor0
+
+\fs28 \cf4 \cb1 Oplossing:
+\fs32 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \kerning1\expnd0\expndtw0 \CocoaLigature0 \outl0\strokewidth0 SELECT s.title, a.name FROM songs s JOIN albums a ON s.album = a._id AND a.name = 'Forbidden\'92;\
+
+\f1\fs32 \cf4 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \outl0\strokewidth0 \strokec4 \
+\pard\tx566\pardeftab720\sa160\partightenfactor0
+
+\b \cf4 \cb5 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 2.
+\b0  \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 Zelfde vraag, alleen nu op volgorde van tracknummer.\
+\pard\tx566\pardeftab720\sa160\partightenfactor0
+
+\fs28 \cf3 \cb1 \outl0\strokewidth0 Oplossing:\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \kerning1\expnd0\expndtw0 \CocoaLigature0 SELECT s.track, s.title, a.name FROM songs s JOIN albums a ON s.album = a._id AND a.name = 'Forbidden' ORDER BY s.track;\
+\pard\tx566\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\
+\pard\tx566\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\fs32 \cf4 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \outl0\strokewidth0 \strokec4 \
+\pard\tx566\pardeftab720\sa160\partightenfactor0
+
+\b \cf4 \cb5 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 3.
+\b0  \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 Toon alle songs van de band \'91Deep Purple\'92.\
+\pard\tx566\pardeftab720\sa160\partightenfactor0
+
+\fs28 \cf3 \cb1 \outl0\strokewidth0 Oplossing:\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \kerning1\expnd0\expndtw0 \CocoaLigature0 SELECT ar._id, al.artist, s.album, al._id, s.title, al.name, ar.name FROM artists ar JOIN albums al JOIN  Songs s ON s.album = al._id AND al.artist = ar._id AND ar.name = 'Deep Purple' ORDER BY s.album;\
+
+\f1\fs32 \cf4 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \outl0\strokewidth0 \strokec4 \
+\pard\tx566\pardeftab720\sa160\partightenfactor0
+
+\b \cf4 \cb5 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 4. 
+\b0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 Wijzig de naam van de band \'91Mehitabel\'92 in \'91One Kitten\'92.\
+\pard\tx566\pardeftab720\sa160\partightenfactor0
+
+\fs28 \cf4 \cb1 Oplossing:\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \kerning1\expnd0\expndtw0 \CocoaLigature0 \outl0\strokewidth0 UPDATE artists SET name='One Kitten' WHERE name='Mehitabel';\cf6 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \outl0\strokewidth0 \strokec4 \
+\pard\tx566\pardeftab720\sa160\partightenfactor0
+
+\f1\fs32 \cf4 \
+\pard\tx566\pardeftab720\sa160\partightenfactor0
+
+\b \cf4 \cb5 5. 
+\b0 Toon alle songs van de band \'91Aerosmith\'92 in alfabetische volgorde. Alleen de titel is voldoende in de output. Kan via de view. Elke titel mag maar \'e9\'e9n keer voorkomen.\
+\pard\tx566\pardeftab720\sa160\partightenfactor0
+
+\fs28 \cf3 \cb1 \outl0\strokewidth0 Oplossing:\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \kerning1\expnd0\expndtw0 \CocoaLigature0 SELECT DISTINCT s.title FROM artists ar JOIN albums al JOIN  Songs s ON s.album = al._id AND al.artist = ar._id AND\
+ar.name='Aerosmith'  ORDER BY s.title;\
+\pard\tx566\pardeftab720\sa160\partightenfactor0
+
+\f1\fs32 \cf4 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \outl0\strokewidth0 \strokec4 \
+\pard\tx566\pardeftab720\sa160\partightenfactor0
+
+\b \cf4 \cb5 6. 
+\b0 In plaats van de titel, nu het aantal songs van \'91Aerosmith\'92. Elke titel mag ook hier maar \'e9\'e9n keer worden geteld.\
+\pard\tx566\pardeftab720\sa160\partightenfactor0
+
+\fs28 \cf3 \cb1 \outl0\strokewidth0 Oplossing:\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \kerning1\expnd0\expndtw0 \CocoaLigature0 SELECT COUNT(DISTINCT s.title) FROM artists ar JOIN albums al JOIN  Songs s ON s.album = al._id AND al.artist = ar._id AND\
+ar.name='Aerosmith'  ORDER BY s.title;\
+
+\f1\fs32 \cf4 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \outl0\strokewidth0 \strokec4 \
+\pard\tx566\pardeftab720\partightenfactor0
+
+\b \cf4 \cb5 7. 
+\b0 Geef het aantal albums van \'91Aerosmith\'92. Dubbele tellen ook hier niet mee.\
+\pard\tx566\pardeftab720\sa160\partightenfactor0
+
+\fs28 \cf3 \cb1 \outl0\strokewidth0 Oplossing:\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \kerning1\expnd0\expndtw0 \CocoaLigature0 SELECT COUNT(DISTINCT al.name) FROM Albums al JOIN Artists ar ON al.artist=ar._id AND ar.name='Aerosmith';
+\f1\fs32 \cf4 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \outl0\strokewidth0 \strokec4 \
+\pard\tx566\pardeftab720\partightenfactor0
+\cf4 \
+}

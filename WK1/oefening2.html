@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html> 
+    <head> 
+        <title>wt wk1 ex1</title> 
+    </head> 
+    <body>
+		<h1>Muziekschool Sessions Aanmeldformulier</h1>
+		<p>Vul uw gegevens alstublieft in, dan nemen wij zo spoedig mogelijk contact met u op!</p>
+		<p>LET OP: voornaam, achternaam, password, email-adres en betaalwijze zijn verplicht.</p>
+		<form>
+				<p>
+					<label>Voornaam:</label>
+					<input type="text" name="voornaam" placeholder="voornaam">
+					<label>Achternaam:</label>
+					<input type="text" name="achternaam" placeholder="achternaam">
+				</p>
+				<p>
+					<label>E-mailadres:</label>
+					<input type="text" name="E-mailadres" placeholder="name@email.com">
+					<label>Password:</label>
+					<input type="text" name="password" placeholder="password">
+				</p>
+				<p>Bent u ouder dan 18?</p>
+				<p>
+					<label>Ja</label>
+					<input type="radio" id="ja" name="janee" value="ja">
+		        	<label for="nee">Nee :</label>
+		        	<input type="radio" id="nee" name= "janee" value="nee">
+		        </p>
+				<p>Voor welk instrument wilt u lessen volgen(meerdere opties mogelijk)?</p>
+				<p>
+			        <input type="checkbox" name="instrument[]" value="Piano">Drums
+			        <input type="checkbox" name="instrument[]" value="Gitaar">Piano
+			        <input type="checkbox" name="instrument[]" value="Trompet">Gitaar
+			        <input type="checkbox" name="instrument[]" value="Viool">Harp
+				</p>
+				<p>Welke betaal methode kiest u?</p>
+				<p>
+					<select name="betaal methode">
+						<option value="IDeal">IDEAL</option>
+						<option value="PayPal">PayPal</option>
+						<option value="Creditcard">Creditcard</option>
+					</select>
+				</p>
+				<p>
+					<input type="submit" value="Verstuur formulier">
+				</p>
+		</form>
+	</body>
+</html>

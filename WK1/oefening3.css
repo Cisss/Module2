@@ -1,0 +1,22 @@
+.date-names, .name-list {
+	margin: 0;
+	padding: 10px;
+	min-width: 600px;
+	width: 20%;
+}
+
+.date-names {
+	width: 20%;
+	background-color: darkblue;
+	color: white;
+}
+.even {
+	
+	background-color: DeepSkyBlue;
+}
+.oneven {
+	background-color: CornflowerBlue;
+}
+.name-list span {
+	font-weight: bold;
+}

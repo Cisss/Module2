@@ -1,0 +1,26 @@
+body {
+	font-family: calibri, Verdana, sans-serif;
+}
+
+img {
+	display: block;
+	margin: 0 auto;
+	width: 40vw;
+}
+
+.blauw {
+	color: blue;
+}
+.grayed {
+	padding: 20px;
+	background-color: lightgrey;
+}
+.grayed p {
+	padding: 20px;
+	background-color: #eee;
+}
+
+.grayed p:hover {
+	cursor: pointer;
+	background-color: #aa0;
+}
